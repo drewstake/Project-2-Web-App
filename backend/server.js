@@ -1,4 +1,3 @@
-// backend/server.js
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -9,7 +8,7 @@ const requestRoutes = require('./routes/requests');
 const app = express();
 const PORT = 3000;
 
-app.use(cors());
+app.use(cors()); // Ensure this line is present
 app.use(bodyParser.json());
 
 app.use('/api/tenants', tenantRoutes);
