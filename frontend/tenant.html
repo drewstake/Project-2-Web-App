@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tenant - Submit Maintenance Request</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h2>Submit Maintenance Request</h2>
+  <form id="requestForm">
+    <label for="apartmentNumber">Apartment Number:</label>
+    <input type="text" id="apartmentNumber" name="apartmentNumber" required>
+
+    <label for="area">Area of Problem:</label>
+    <select id="area" name="area" required>
+      <option value="">Select Area</option>
+      <option value="Kitchen">Kitchen</option>
+      <option value="Bathroom">Bathroom</option>
+      <option value="Living Room">Living Room</option>
+      <option value="Bedroom">Bedroom</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label for="description">Description of Problem:</label>
+    <textarea id="description" name="description" required></textarea>
+
+    <label for="photo">Photo (optional):</label>
+    <input type="file" id="photo" name="photo" accept="image/*">
+
+    <button type="submit">Submit Request</button>
+  </form>
+
+  <script src="js/tenant.js"></script>
+</body>
+</html>

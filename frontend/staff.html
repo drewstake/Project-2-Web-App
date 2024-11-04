@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maintenance Staff - Manage Requests</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h2>Maintenance Requests</h2>
+
+  <div class="filters">
+    <label for="filterApartment">Apartment Number:</label>
+    <input type="text" id="filterApartment">
+
+    <label for="filterArea">Area:</label>
+    <input type="text" id="filterArea">
+
+    <label for="filterStatus">Status:</label>
+    <select id="filterStatus">
+      <option value="">All</option>
+      <option value="pending">Pending</option>
+      <option value="completed">Completed</option>
+    </select>
+
+    <label for="startDate">Start Date:</label>
+    <input type="date" id="startDate">
+
+    <label for="endDate">End Date:</label>
+    <input type="date" id="endDate">
+
+    <button id="filterBtn">Filter</button>
+    <button id="resetBtn">Reset</button>
+  </div>
+
+  <table id="requestsTable">
+    <thead>
+      <tr>
+        <th>Request ID</th>
+        <th>Apartment Number</th>
+        <th>Area</th>
+        <th>Description</th>
+        <th>Date &amp; Time</th>
+        <th>Photo</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Requests will be populated here -->
+    </tbody>
+  </table>
+
+  <script src="js/staff.js"></script>
+</body>
+</html>
