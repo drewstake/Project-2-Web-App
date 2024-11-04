@@ -1,4 +1,3 @@
-// frontend/js/manager.js
 document.addEventListener('DOMContentLoaded', fetchTenants);
 
 document.getElementById('addTenantForm').addEventListener('submit', function(e) {

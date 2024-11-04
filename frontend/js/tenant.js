@@ -1,4 +1,3 @@
-// frontend/js/tenant.js
 document.getElementById('requestForm').addEventListener('submit', function(e) {
     e.preventDefault();
   

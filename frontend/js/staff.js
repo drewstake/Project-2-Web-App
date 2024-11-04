@@ -1,4 +1,3 @@
-// frontend/js/staff.js
 document.addEventListener('DOMContentLoaded', fetchRequests);
 
 document.getElementById('filterBtn').addEventListener('click', fetchRequests);
